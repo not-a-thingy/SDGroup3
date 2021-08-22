@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_contactus">
+    <RelativeLayout
+        android:id="@+id/cv_ContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/v_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/teal_200" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@color/teal_200"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textColor="#000000"
+            android:textSize="24sp"></TextView>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_callUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="Call Us"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_callUsDesription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_callUs"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="Office: 082 - XXX XXX"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_callUsDesription"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:paddingTop="20dp"
+                android:text="Whatsapp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_whatsappDesription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_whatsapp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="012-345678"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_whatsappDesription"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:paddingTop="20dp"
+                android:text="Email"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_emailDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_goals"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="smartime3@gmail.com"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp"></TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
