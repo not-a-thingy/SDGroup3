@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class activity_register extends AppCompatActivity {
     EditText Fullname, Username, Email, Password;
-    Button Go;
+    Button Send;
     TextView Login;
     FirebaseAuth fAuth;
     String email,name,password;
@@ -32,12 +32,12 @@ public class activity_register extends AppCompatActivity {
         Username = findViewById(R.id.tv_username2);
         Email = findViewById(R.id.tv_email);
         Password = findViewById(R.id.tv_password2);
-        Go = findViewById(R.id.btn_go);
+        Send = findViewById(R.id.btn_send);
         Login = findViewById(R.id.tv_text3);
 
         fAuth = FirebaseAuth.getInstance();
 
-        Go.setOnClickListener(new View.OnClickListener() {
+        Send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(validate()){

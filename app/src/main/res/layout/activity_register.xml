@@ -7,11 +7,11 @@
     tools:context=".activity_register">
 
     <Button
-        android:id="@+id/btn_go"
+        android:id="@+id/btn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:text="GO"
+        android:text="Register Now!"
         android:textColor="#040404"
         android:textSize="18sp"
         android:textStyle="bold"

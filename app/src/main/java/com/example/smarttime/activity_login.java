@@ -99,18 +99,7 @@ public class activity_login extends AppCompatActivity {
             Toast.makeText(activity_login.this, "Login Successful", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }else{
-            EditText verifyEmail = new EditText(v.getContext());
-            AlertDialog.Builder verifyEmailDialog = new AlertDialog.Builder(v.getContext());
-            verifyEmailDialog.setTitle("Error! Email not verified");
-            verifyEmailDialog.setMessage("Please verify your email before login");
-
-            verifyEmailDialog.setNegativeButton("Close", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                }
-            });
-
-            verifyEmailDialog.create().show();
+            Toast.makeText(activity_login.this, "Email Not Verified!",Toast.LENGTH_LONG).show();
             fAuth.signOut();
         }
     }
