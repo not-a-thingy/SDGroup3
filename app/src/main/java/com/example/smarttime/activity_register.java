@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class activity_register extends AppCompatActivity {
     EditText Fullname, Username, Email, Password;
@@ -24,6 +26,7 @@ public class activity_register extends AppCompatActivity {
     TextView Login;
     FirebaseAuth fAuth;
     String email,name,password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -103,7 +106,7 @@ public class activity_register extends AppCompatActivity {
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(activity_register.this, "User register complete,verification link has been sent.", Toast.LENGTH_LONG).show();
-                        //sendUserData();
+                        sendUserData();
                         fAuth.signOut();
                         finish();
                         startActivity(new Intent(getApplicationContext(), activity_login.class));
@@ -113,5 +116,12 @@ public class activity_register extends AppCompatActivity {
                 }
             });
         }
+    }
+
+    private void sendUserData(){
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = firebaseDatabase.getReference("User Info").child(fAuth.getUid());
+        UserProfile userProfile = new UserProfile(email,name);
+        myRef.setValue(userProfile);
     }
 }

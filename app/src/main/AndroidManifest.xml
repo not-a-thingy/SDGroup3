@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartTime">
-        <activity android:name=".activity_contactus"></activity>
+        <activity android:name=".activity_changepassword"></activity>
+        <activity android:name=".activity_userprofile" />
+        <activity android:name=".activity_contactus" />
         <activity android:name=".activity_aboutus" />
         <activity android:name=".activity_register" />
         <activity android:name=".MainActivity" />

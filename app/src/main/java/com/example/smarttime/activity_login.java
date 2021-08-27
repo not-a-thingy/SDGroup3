@@ -85,10 +85,10 @@ public class activity_login extends AppCompatActivity {
             }
         });
 
-        /*if (fAuth.getCurrentUser() != null) {
+        if (fAuth.getCurrentUser() != null) {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
-        }*/
+        }
     }
 
     private void checkEmailVerification(View v){

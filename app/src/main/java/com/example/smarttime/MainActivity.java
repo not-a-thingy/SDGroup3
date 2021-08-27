@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    Button Logout;
+    Button Logout, viewProfile;
     TextView contactUS, aboutUs;
     FirebaseAuth firebaseAuth;
     @Override
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Logout = findViewById(R.id.btn_logout);
         contactUS = findViewById(R.id.tv_contactus);
         aboutUs = findViewById(R.id.tv_aboutus);
+        viewProfile = findViewById(R.id.btn_viewprofile);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -35,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, activity_aboutus.class));
+            }
+        });
+
+        viewProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, activity_userprofile.class));
             }
         });
 
