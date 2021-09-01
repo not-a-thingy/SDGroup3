@@ -10,6 +10,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="red">#661313</color>
 
     <string-array name="colors" translatable="false">
         <item>#99cc00</item>
@@ -30,5 +31,4 @@
         <item>#cccccc</item>
         <item>#888888</item>
     </string-array>
-
 </resources>

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/red"
+
     tools:context=".activity_aboutus">
 
     <RelativeLayout
@@ -15,31 +17,32 @@
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
-            android:background="#4CAF50" />
-
-        <View
-            android:id="@+id/v_wave"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_above="@id/v_bottom"
-            android:background="@color/white" />
+            android:background="#171616
+" />
 
         <TextView
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:background="#4CAF50"
-            android:fontFamily="casual"
+            android:background="#FFFFFF"
+            app:backgroundTint="#171616"
+            android:fontFamily="monospace"
             android:gravity="center"
+            android:textStyle="bold"
             android:text="ABOUT US"
             android:textColor="#FFFFFF"
             android:textSize="24sp"></TextView>
 
         <RelativeLayout
             android:layout_width="350dp"
-            android:layout_height="450dp"
-            android:layout_centerInParent="true">
+            android:layout_height="350dp"
+            android:layout_above="@+id/v_bottom"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="90dp">
 
 
             <TextView
@@ -57,25 +60,11 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="38dp"
                 android:layout_marginRight="38dp"
-                android:layout_marginBottom="206dp"
+                android:layout_marginBottom="40dp"
                 android:text="Smart Time is all about punctuality, which applies about punctuality in doing something. through user-created schedules, this will be able to help users manage their time more efficiently and will not be left behind in following the classes and activities to be done."
+                android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="127dp"
-                android:layout_height="111dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="113dp"
-                android:layout_marginLeft="113dp"
-                android:layout_marginEnd="110dp"
-                android:layout_marginRight="110dp"
-                android:layout_marginBottom="35dp"
-                app:srcCompat="@android:drawable/ic_menu_recent_history" />
         </RelativeLayout>
 
     </RelativeLayout>
