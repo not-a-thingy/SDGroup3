@@ -16,24 +16,68 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.233"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.332" />
+
+    <Button
+        android:id="@+id/btn_changepass"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E42222"
+        android:text="CHANGE PASSWORD"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#E42222"
+        android:text="EDIT PROFILE"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_changepass"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_ProfileName"
-        android:layout_width="117dp"
-        android:layout_height="29dp"
+        android:layout_width="288dp"
+        android:layout_height="28dp"
         android:text="FullName"
         android:textColor="#090000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_ProfileEmail"
+        android:layout_width="261dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="344dp"
+        android:text="Email"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_email2"
@@ -45,38 +89,34 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_ProfileName"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.051" />
 
-    <Button
-        android:id="@+id/btn_changepass"
-        android:layout_width="125dp"
-        android:layout_height="54dp"
-        android:backgroundTint="#E42222"
-        android:text="CHANGE PASSWORD"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/iv_profilePic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.561"
+        tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/tv_ProfileEmail"
-        android:layout_width="261dp"
-        android:layout_height="25dp"
-        android:layout_marginBottom="420dp"
-        android:text="Email"
-        android:textColor="#090000"
-        android:textSize="20sp"
+    <Button
+        android:id="@+id/btn_logout1"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E42222"
+        android:text="LOG OUT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_changepass"
+        app:layout_constraintVertical_bias="0.539" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

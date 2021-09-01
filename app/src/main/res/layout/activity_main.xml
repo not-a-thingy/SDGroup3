@@ -18,19 +18,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.364" />
 
-    <Button
-        android:id="@+id/btn_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LOGOUT"
-        app:backgroundTint="#E42222"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
-
     <TextView
         android:id="@+id/tv_contactus"
         android:layout_width="wrap_content"
@@ -64,10 +51,21 @@
         android:backgroundTint="#E42222"
         android:text="View Profile"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_logout"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_contactus"
-        app:layout_constraintVertical_bias="0.169" />
+        app:layout_constraintVertical_bias="0.158" />
+
+    <TextView
+        android:id="@+id/tv_timetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeTable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

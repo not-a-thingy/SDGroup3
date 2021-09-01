@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_editprofile">
+
+    <ImageView
+        android:id="@+id/iv_profilePic2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#E42222"
+        android:text="UPDATE PROFILE"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <TextView
+        android:id="@+id/tv_ProfileName2"
+        android:layout_width="117dp"
+        android:layout_height="29dp"
+        android:text="FullName"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profilePic2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_ProfileEmail2"
+        android:layout_width="261dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="284dp"
+        android:text="Email"
+        android:textColor="#090000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <TextView
+        android:id="@+id/tv_email3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:text="Email"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ProfileEmail2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:drawablePadding="10dp"
+        android:text="Full Name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

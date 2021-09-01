@@ -1,3 +1,78 @@
 <resources>
     <string name="app_name">SmartTime</string>
+    <string-array name="Main">
+        <item> Timetable </item>
+    </string-array>
+
+    <string-array name="Description">
+        <item> TIMETABLE </item>
+    </string-array>
+
+    <string-array name="Week">
+        <item> Monday </item>
+        <item> Tuesday </item>
+        <item> Wednesday </item>
+        <item> Thursday </item>
+        <item> Friday </item>
+    </string-array>
+
+    <string-array name="Monday">
+        <item>DDWZ 2753 - USER INTERFACE </item>
+        <item>BREAK</item>
+        <item>DDWC 3723 - SOFTWARE DEVELOPMENT </item>
+
+    </string-array>
+
+    <string-array name="Tuesday">
+        <item>DDWZ 2753 - USER INTERFACE </item>
+        <item>DDWC 3343 - COMPUTER SECURITY </item>
+        <item>BREAK</item>
+        <item>DDWC 3333 - COMPUTER HARDWARE MANAGEMENT AND SERVICE </item>
+    </string-array>
+
+    <string-array name="Wednesday">
+        <item>DDWC 3333 - COMPUTER HARDWARE MANAGEMENT AND SERVICE </item>
+        <item>DDWC 3723 - SOFTWARE DEVELOPMENT </item>
+        <item>BREAK</item>
+    </string-array>
+
+    <string-array name="Thursday">
+        <item>DDWC 2653 - VB.NET PROGRAMMING </item>
+        <item>DDWC 3343 - COMPUTER SECURITY </item>
+        <item>BREAK</item>
+    </string-array>
+
+    <string-array name="Friday">
+        <item>DDWC 2653 - VB.NET PROGRAMMING </item>
+    </string-array>
+
+    <string-array name="time1">
+        <item>11:00 AM - 12:50 PM</item>
+        <item>1:00 PM - 1:50 PM</item>
+        <item>2:00 PM - 3:50 PM</item>
+    </string-array>
+
+    <string-array name="time2">
+        <item>9:00 AM - 10:50 AM</item>
+        <item>11:00 AM - 12:50 PM</item>
+        <item>1:00 PM - 1:50 PM</item>
+        <item>2:00 PM - 3:50 PM</item>
+    </string-array>
+
+    <string-array name="time3">
+        <item>9:00 AM - 10:50 AM</item>
+        <item>11:00 AM - 12:50 PM</item>
+        <item>1:00 PM - 1:50 PM</item>
+    </string-array>
+
+    <string-array name="time4">
+        <item>9:00 AM - 10:50 AM</item>
+        <item>11:00 AM - 12:50 PM</item>
+        <item>1:00 PM - 1:50 PM</item>
+    </string-array>
+
+    <string-array name="time5">
+        <item>10:00 AM - 11:50 AM</item>
+    </string-array>
+
 </resources>
